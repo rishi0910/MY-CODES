@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function hello(){
+                var n;
+                n=Number(document.getElementById("age").value);
+                if(n<18)
+                {
+                    if(n==null || n==" "){
+                    alert("FIELD REQUIRED");}
+
+                    else{
+                    alert("Not eligible");}
+                }
+                
+                else
+                {
+                    alert("Eligible");
+                }
+                
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input id="age">
+        <input type="button" onclick="hello()">ENTER YOUR AGE
+    </body>
+
+</html>
