@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function maths(){
+                var a,b,c;
+                a=document.getElementById("i1").value;
+                b=document.getElementById("i2").value;
+                c=parseInt(a)*parseInt(b)
+                document.getElementById("Answer").value=c;
+            }
+            function changeColor(){
+             var b = document.getElementById("b1");
+             b.style.backgroundColor = "red";
+
+            }
+            function changeColor1(){
+             var b = document.getElementById("b1");
+             b.style.backgroundColor = "blue";
+
+            }
+        </script>
+    </head>
+    <body id="b1">
+    <input type="number" id="i1">
+    <input  type="numbr"id="i2">
+    <input id="Answer">
+    BUTTOn<input type="submit" onclick="maths()"><br>
+    RED<input type="button" onclick="changeColor()" value="Submit"><br>
+    BLUE<input type="button" onclick="changeColor1()"value="click"><br>
+    </body>
+</html>      
+
